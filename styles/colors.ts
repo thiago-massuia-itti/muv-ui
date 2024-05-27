@@ -1,0 +1,26 @@
+enum COLORS {
+  background = '#F5F8FC',
+  background2 = '#F6F6F6',
+  black = '#000000',
+  blue = '#5959FF',
+  blue2 = '#F5F8FC',
+  focusBackgroud = '#E5ECF4',
+  green = '#00CD69',
+  noProfile = '#ABA7BF',
+  orange = '#FF6200',
+  orange1 = '#FF8B00',
+  orange2 = '#FFE5D9',
+  primary = '#001040',
+  red = '#FF3C51',
+  separator = '#E8E8E8',
+  text = '#4A4A4A',
+  textBlack = '#282828',
+  textEmpty = '#7984A5',
+  uenoGreen = '#20D3A4',
+  uenoText = '#000D33',
+  unfocusedText = '#A9A9A9',
+  white = '#FFFFFF',
+  yellow = '#FFD400',
+}
+
+export { COLORS };
