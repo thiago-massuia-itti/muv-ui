@@ -1,6 +1,7 @@
 import type { Meta, ComponentStory } from '@storybook/react';
-import { MuvButton, VARIANTS } from '../../../components/molecules/Button';
+import { MuvButton, VARIANTS } from '../../../components/molecules/MuvButton';
 import React from 'react';
+const iconCorp = require('assets/images/icon-briefcase-selected.png');
 
 
 export default {
@@ -30,4 +31,17 @@ Disabled.args = {
   label: 'Disabled Button',
   variant: VARIANTS.FILLED,
   disabled: true,
+};
+
+export const WithIconLeft = Template.bind({});
+WithIconLeft.args = {
+  label: 'Button with Icon',
+  variant: VARIANTS.FILLED,
+  iconLeft: iconCorp, // replace with actual path to icon
+};
+export const WithIconRight = Template.bind({});
+WithIconRight.args = {
+  label: 'Button with Icon',
+  variant: VARIANTS.FILLED,
+  iconRight: iconCorp, // replace with actual path to icon
 };

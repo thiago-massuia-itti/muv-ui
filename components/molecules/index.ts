@@ -1,3 +1,3 @@
-import Button from "./Button";
+import MuvButton from "./MuvButton";
 
-export { Button };
+export { MuvButton };

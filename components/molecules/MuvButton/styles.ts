@@ -26,7 +26,7 @@ const styles = ScaledSheet.create({
   },
   text: {
     color: COLORS.white,
-    fontFamily: 'mint-bold',
+    fontFamily: 'ueno-medium',
     fontSize: 16,
     fontWeight: '600',
     lineHeight: 18,

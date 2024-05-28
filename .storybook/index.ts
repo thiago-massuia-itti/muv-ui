@@ -8,4 +8,4 @@ const StorybookUIRoot = view.getStorybookUI({
   },
 });
 
-export default StorybookUIRoot;
+export default (StorybookUIRoot);
