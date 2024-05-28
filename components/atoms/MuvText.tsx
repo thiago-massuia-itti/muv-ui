@@ -25,13 +25,13 @@ const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regu
     
     const fontFamilyStyle = () => {
         const fontWeights = {
-            'light': 'UenoLogical-Light',
-            'book': 'UenoLogical-Book',
-            'regular': 'UenoLogical-Regular',
-            'medium': 'UenoLogical-Medium',
-            'bold': 'UenoLogical-Bold',
-            'italic': 'UenoLogical-Italic',
-            'mediumItalic': 'UenoLogical-MediumItalic',   
+            'light': 'ueno-light',
+            'book': 'ueno-book',
+            'regular': 'ueno-regular',
+            'medium': 'ueno-medium',
+            'bold': 'ueno-bold',
+            'italic': 'ueno-italic',
+            'mediumItalic': 'ueno-MediumItalic',   
         }
         return { fontFamily: fontWeights[weight] || fontWeights['regular'] };
     }
