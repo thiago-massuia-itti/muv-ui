@@ -20,7 +20,7 @@ const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regu
             'sm': 14,
             'xs': 12,
         }    
-        return { fontSize: sizes[size], lineHeight: sizes[size] * 1.5};
+        return { fontSize: sizes[size] || sizes['md'], lineHeight: (sizes[size] || sizes['md']) * 1.5};
     }
     
     const fontFamilyStyle = () => {
@@ -32,8 +32,8 @@ const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regu
             'bold': 'UenoLogical-Bold',
             'italic': 'UenoLogical-Italic',
             'mediumItalic': 'UenoLogical-MediumItalic',   
-     }
-        return { fontFamily: fontWeights[weight] };
+        }
+        return { fontFamily: fontWeights[weight] || fontWeights['regular'] };
     }
     const handleColor = () => {
         const colors: { [key: string]: COLORS } = {
