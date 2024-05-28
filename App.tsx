@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import * as Font from 'expo-font';
 import Storybook from './.storybook';
+
+// What we're exporting here is the same as what we're exporting in the Storybook file
 export { MuvButton } from './components/molecules';
 export { MuvText } from './components/atoms';
 
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
-
   useEffect(() => {
     async function loadFonts() {
       await Font.loadAsync({
