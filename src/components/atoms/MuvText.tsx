@@ -1,15 +1,16 @@
-import { COLORS } from '@/styles';
+import { COLORS } from '../../../styles';
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, TextProps } from 'react-native';
 
-interface MuvTextProps {
+interface MuvTextProps extends TextProps {
     children: string;
     size?: '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
     weight?: 'light' | 'book' | 'regular' | 'medium' | 'bold' | 'italic' | 'mediumItalic';
     color?: 'primary' | 'orange' | 'gray' | 'black' | 'blue' | 'green' | 'text' | string;
+    style?: any;
 }
 
-const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regular', color = 'text'  }) => {
+const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regular', color = 'text', style  }) => {
     
     const sizeStyle = () => {
         const sizes = {
@@ -50,7 +51,7 @@ const MuvText: React.FC<MuvTextProps> = ({ children, size = 'sm', weight = 'regu
             return { color: color };
         }
     };
-    return <Text style={[sizeStyle(), fontFamilyStyle(), handleColor()]}>{children}</Text>;
+    return <Text style={[sizeStyle(), fontFamilyStyle(), handleColor(), style]}>{children}</Text>;
 };
 
 export default MuvText;

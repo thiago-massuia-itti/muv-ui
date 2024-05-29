@@ -1,5 +1,5 @@
 import type { Meta, ComponentStory } from '@storybook/react';
-import { MuvButton, VARIANTS } from '../../../components/molecules/MuvButton';
+import { MuvButton, VARIANTS } from '../../../src/components/molecules/MuvButton';
 import React from 'react';
 const iconCorp = require('assets/images/icon-briefcase-selected.png');
 

@@ -1,5 +1,5 @@
 import type { Meta, ComponentStory } from '@storybook/react';
-import { MuvText } from '../../../components/atoms/';
+import MuvText from '../../../src/components/atoms/MuvText';
 import React from 'react';
 
 export default {

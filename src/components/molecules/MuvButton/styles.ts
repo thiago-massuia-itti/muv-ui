@@ -1,7 +1,7 @@
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 import type { iGetContainerStyle, iGetTextStyle } from './types';
-import { COLORS, SPACING } from '../../../styles';
+import { COLORS, SPACING } from '@/styles';
 
 const styles = ScaledSheet.create({
   container: {
