@@ -1,38 +1,59 @@
 {
-  "name": "muvui",
-  "version": "1.0.0",
-  "main": "expo/AppEntry.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "storybook-generate": "sb-rn-get-stories"
-  },
-  "dependencies": {
-    "expo": "~51.0.8",
-    "expo-font": "~12.0.5",
-    "expo-router": "^3.5.14",
-    "expo-splash-screen": "^0.27.4",
-    "expo-status-bar": "~1.12.1",
-    "react": "18.2.0",
-    "react-native": "0.74.1",
-    "react-native-size-matters": "^0.4.2",
-    "react-native-svg": "^15.3.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@react-native-async-storage/async-storage": "^1.23.1",
-    "@react-native-community/datetimepicker": "^8.0.1",
-    "@react-native-community/slider": "^4.5.2",
-    "@storybook/addon-ondevice-actions": "^7.6.19",
-    "@storybook/addon-ondevice-controls": "^7.6.19",
-    "@storybook/react-native": "^7.6.19",
-    "@types/react": "~18.2.45",
-    "babel-loader": "^8.3.0",
-    "react-dom": "18.2.0",
-    "react-native-safe-area-context": "^4.10.1",
-    "typescript": "~5.3.3"
-  },
-  "private": true
-}
+    "name": "Muv-ui",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "files": [
+      "src/**/*",
+      "assets/fonts/*",
+      "styles/**/*"
+    ],
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "storybook-generate": "sb-rn-get-stories",
+      "build": "rm -rf /dist && yarn run build:esm && yarn run build:cjs",
+      "build:esm": "tsc",
+      "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "peerDependencies": {
+      "react": "^17.0.1",
+      "react-native": "0.64.0"
+    },
+    "peerDepencies": {
+      "expo": "~51.0.8",
+      "expo-font": "~12.0.5",
+      "expo-router": "^3.5.14",
+      "expo-splash-screen": "^0.27.4",
+      "expo-status-bar": "~1.12.1",
+      "react": "18.2.0",
+      "react-native": "0.74.1",
+      "react-native-size-matters": "^0.4.2",
+      "react-native-svg": "^15.3.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0",
+      "@react-native-async-storage/async-storage": "^1.23.1",
+      "@react-native-community/datetimepicker": "^8.0.1",
+      "@react-native-community/slider": "^4.5.2",
+      "@rollup/plugin-commonjs": "^25.0.8",
+      "@rollup/plugin-json": "^6.1.0",
+      "@rollup/plugin-node-resolve": "^15.2.3",
+      "@rollup/plugin-typescript": "^11.1.6",
+      "@storybook/addon-ondevice-actions": "^7.6.19",
+      "@storybook/addon-ondevice-controls": "^7.6.19",
+      "@storybook/react-native": "^7.6.19",
+      "@types/react": "~18.2.45",
+      "babel-loader": "^8.3.0",
+      "react-dom": "18.2.0",
+      "react-native-safe-area-context": "^4.10.1",
+      "rollup": "^4.18.0",
+      "rollup-plugin-dts": "^6.1.1",
+      "rollup-plugin-peer-deps-external": "^2.2.4",
+      "rollup-plugin-postcss": "^4.0.2",
+      "rollup-plugin-terser": "^7.0.2",
+      "typescript": "~5.3.3"
+    },
+    "private": true
+  }
