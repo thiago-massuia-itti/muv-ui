@@ -1,5 +1,5 @@
 {
-    "name": "Muv-ui",
+    "name": "muv-ui",
     "version": "1.0.0",
     "main": "src/index.ts",
     "files": [
@@ -8,27 +8,16 @@
       "styles/**/*"
     ],
     "scripts": {
-      "start": "expo start",
-      "android": "expo start --android",
-      "ios": "expo start --ios",
-      "web": "expo start --web",
-      "storybook-generate": "sb-rn-get-stories",
       "build": "rm -rf /dist && yarn run build:esm && yarn run build:cjs",
       "build:esm": "tsc",
       "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
     },
     "peerDependencies": {
-      "react": "^17.0.1",
-      "react-native": "0.64.0"
+      "react": "18.2.0",
+      "react-native": "0.74.1"
     },
     "peerDepencies": {
-      "expo": "~51.0.8",
-      "expo-font": "~12.0.5",
-      "expo-router": "^3.5.14",
-      "expo-splash-screen": "^0.27.4",
-      "expo-status-bar": "~1.12.1",
-      "react": "18.2.0",
-      "react-native": "0.74.1",
+
       "react-native-size-matters": "^0.4.2",
       "react-native-svg": "^15.3.0"
     },
